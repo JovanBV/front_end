@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <h2>Quick survey about reading habits</h2>
+  <form action="resumen.html">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" /><br />
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" /><br />
+
+    <label>How often do you read books?</label><br />
+    <input type="radio" id="daily" name="readingFrequency" value="Daily" />
+    <label for="daily">Daily</label><br />
+    <input type="radio" id="weekly" name="readingFrequency" value="Weekly" />
+    <label for="weekly">Weekly</label><br />
+    <input
+      type="radio"
+      id="rarely"
+      name="readingFrequency"
+      value="Almost never"
+    />
+    <label for="rarely">Almost never</label><br />
+
+    <label for="favorite_book">Recommend your favorite book:</label><br />
+    <textarea
+      id="favorite_book"
+      name="favoriteBook"
+      rows="4"
+      cols="50"
+    ></textarea
+    ><br />
+
+    <input type="submit" value="Submit survey" />
+  </form>
+</html>
