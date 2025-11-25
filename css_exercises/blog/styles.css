@@ -1,0 +1,145 @@
+.main-column{
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-title{
+    color: #2d2e2e;
+    text-align: center;
+    margin: 15px auto 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 62px;
+    line-height: 66px;
+    font-weight: 0;
+    letter-spacing: 1px;
+    max-width: 768px;
+}
+
+.sub-title{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #403f3e;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding-left: 0;
+}
+
+.writter{
+    color: #2d2e2e;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.social-media-box{
+    margin-top: 20px;
+    grid-template-columns: 20px 20px 20px;
+    grid-column-gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-icon svg {
+  transition: transform 0.2s, fill 0.2s;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.1);
+}
+
+.social-icon.facebook svg {
+  fill: #1877F2;
+}
+
+.social-icon.x{
+    fill: #000;
+}
+
+.social-icon.in{
+    fill: #0a66c2;
+}
+
+.picture-box{
+    margin: 1rem auto 0 auto;
+}
+
+.picture{
+    border-radius: 3px;
+    width: 100%;
+}
+
+.article{
+    overflow: auto;
+}
+
+.image-notes{
+    padding: 5%;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.hiper-link{
+    font-weight: 400;
+    color: #3d4592;
+}
+
+.publicity-square{
+    float: right;
+    background-color: #ffbf6e;
+    border-radius: 5px;
+    margin: 20px auto;
+    border-color: red;
+    padding: 24px;
+    width: 50%;
+}
+
+.publicity{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.publicity-button{
+    margin-top: 2rem;
+    display: block;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button{
+    color:white;
+    background-color: #2d2e2e;
+    padding: 1rem;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.content{
+    color: #403f3e;
+    font-size: 1.2rem;
+    line-height: 31px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
