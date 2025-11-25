@@ -1,0 +1,50 @@
+
+.navbar{
+    padding-top: 0.8rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.navbar .nav-main{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar .nav-brand{
+    margin-right: 2rem;
+    width: min-content;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar .brand-image{
+    height: 3rem;
+}
+
+.navbar .nav-button:hover,
+.navbar .nav-button:active,
+.navbar .nav-button:focus{
+    text-shadow: 0 0 0.5px black, 0 0 0.5px black;
+}
+
+.navbar .nav-button{
+    font-weight: normal;
+    border: none;
+    background: none;
+    color: black;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.navbar input{
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+
+.navbar input:focus{
+    border: 3px solid #555
+}
