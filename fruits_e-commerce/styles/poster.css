@@ -5,7 +5,15 @@
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-
+    
+}
+.poster .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFE7E9;
+    border-radius: 15px;
 }
 
 .poster .product-info-container{
@@ -14,6 +22,7 @@
     justify-content: center;
     align-content: start;
     width: 70%;
+    margin: 3rem;
 }
 
 .poster .button-container{
