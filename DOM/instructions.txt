@@ -1,0 +1,9 @@
+// Ejercicios de Manipulación del DOM
+
+// Crea un documento HTML con un botón que agregue elementos a una lista ordenada, y otro que limpie todos los elementos de la lista. Realizalo agregando el código JS dentro de un elemento script.
+
+// Crea un documento HTML con un input de texto y un botón, donde al presionar el botón se toman los datos y se muestran en pantalla. Al presionar el botón también se limpia el input. Si se agregan datos nuevos, se sustituyen los anteriores y se repite el proceso.
+
+// Crea un form con inputs de correo, contraseña, nombre y apellidos. También debe tener un radio button para seleccionar si es empleado o no. Al seleccionar “sí”, se debe mostrar un input extra para empleo. Si se vuelve a seleccionar “no”, este input se debe esconder.
+
+

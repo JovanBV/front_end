@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Sign up</h1>
+      <form class="sign-up" action="" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" />
+
+        <label>Are you an employee?:</label>
+        <div id="radio-group" class="radio-group">
+          <label>
+            <p>Yes</p>
+            <input
+              type="radio"
+              id="is-employee"
+              name="is-employee"
+              value="Yes"
+            />
+          </label>
+          <label>
+            <p>No</p>
+            <input
+              type="radio"
+              id="not-employee"
+              name="is-employee"
+              value="No"
+            />
+          </label>
+        </div>
+        <span id="verify-if-employee"></span>
+
+        <input type="submit" value="Send vote" />
+      </form>
+    </div>
+    <script>
+      const isEmployeeRadio = document.getElementById("is-employee");
+      const isNotEmployeeRadio = document.getElementById("not-employee");
+      const radioGroup = document.getElementById("verify-if-employee");
+
+      const verifyIfEmployee = () => {
+        if (isEmployeeRadio.checked) {
+          if (!document.getElementById("position")) {
+            const position = document.createElement("input");
+            position.id = "position";
+            radioGroup.append(position);
+            position.placeholder = "What position?";
+            position.type = "text";
+            position.required = true;
+          }
+        }
+      };
+      const verifyIfNotEmployee = () => {
+        if (isNotEmployeeRadio.checked) {
+          const position = document.getElementById("position");
+          if (position) {
+            position.remove();
+          }
+        }
+      };
+
+      isEmployeeRadio.addEventListener("change", verifyIfEmployee);
+      isNotEmployeeRadio.addEventListener("change", verifyIfNotEmployee);
+    </script>
+  </body>
+</html>
