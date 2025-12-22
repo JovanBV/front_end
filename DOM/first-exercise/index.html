@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <header></header>
+  <body>
+    <header>
+      <h1>List</h1>
+    </header>
+    <button id="add-button">Add to list</button>
+    <button id="delete-button">Empty list</button>
+    <ul id="list">
+      <li id="list-item">list item value</li>
+    </ul>
+    <script>
+      const addButton = document.getElementById("add-button");
+      const deleteButton = document.getElementById("delete-button");
+
+      const emptyList = () => {
+        const list = document.getElementById("list");
+        while (list.firstChild) {
+          list.removeChild(list.firstChild);
+        }
+      };
+
+      const addItem = () => {
+        const item = document.createElement("li");
+        item.innerHTML = "list item value";
+        const listItem = document.getElementById("list");
+        listItem.appendChild(item);
+      };
+
+      addButton.addEventListener("click", addItem);
+      deleteButton.addEventListener("click", emptyList);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <button id="button">Input</button>
+    <input id="input" type="text" placeholder="Type whatever you want!" />
+    <p id="container"></p>
+    <script>
+      const button = document.getElementById("button");
+      const inputValue = document.getElementById("input");
+      const container = document.getElementById("container");
+
+      const showInputContent = () => {
+        if (inputValue.value != "") {
+          container.textContent = inputValue.value;
+          inputValue.value = "";
+        }
+      };
+      button.addEventListener("click", showInputContent);
+    </script>
+  </body>
+</html>
