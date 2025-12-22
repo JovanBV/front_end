@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <p id="text" class="text">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+    numquam ipsum facilis saepe sed ex, repudiandae quod consectetur optio neque
+    incidunt doloremque deserunt! Perferendis, similique repellat corrupti,
+    nesciunt recusandae cupiditate sapiente ipsa quae molestiae nobis magni aut
+    beatae maxime facere molestias ex deserunt repellendus excepturi iure quidem
+    fuga velit. Rerum.
+  </p>
+  <button id="button">Press to change texts background color</button>
+  <script>
+    const p = document.getElementById("text");
+    const button = document.getElementById("button");
+    const colors = ["red", "blue", "green", "yellow", "cyan", "pink"];
+
+    function selectRandomColor() {
+      const randomIndex = Math.floor(Math.random() * colors.length);
+      return colors[randomIndex];
+    }
+
+    const changeBackgroundColor = () => {
+      p.style.setProperty("background-color", selectRandomColor());
+    };
+
+    button.addEventListener("click", changeBackgroundColor);
+  </script>
+</html>
